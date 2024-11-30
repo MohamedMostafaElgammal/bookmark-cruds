@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <div class="container  mt-5 mb-4">
+            <h1 class="mb-5 text-center">Bookmarker</h1>
+            <div class="contant pt-5 pb-3">
+              <div class="divh d-flex flex-row justify-content-center address">
+                <i class="fa-solid fa-bookmark mt-1 me-2 fa-2x"></i>
+                <h2> Bookmark your favorite sites  </h2>
+                <i class="fa-solid fa-bookmark mt-1 ms-2 fa-2x"></i>
+              </div>
+                <div >
+                    <div class=" my-5">
+                        <i class="fa-solid fa-book-bookmark pe-2"></i>
+                        <label for="BookmarkName"  >Bookmark Name</label>
+                        
+                        <input  oninput="validationName()"  type="text" class="form-control my-1 " id="BookMarkName" placeholder="Bookmark Name">
+                        
+                        <p id="msgName" class="alert alert-danger d-none ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, odit?</p>
+                      </div>
+                      <div class=" my-5">
+                        <i class="fa-solid fa-link pe-2"></i>
+                        <label for="SiteUrl"  >Site Url</label>
+                        <input  oninput="validationUrl()" type="email" class="form-control  my-1" id="SiteUrl" placeholder="Website Url">
+                        <p id="msgName" class="alert alert-danger d-none ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, odit?</p>
+                      </div>
+                     <div class="text-center ">
+                        <button class=" btnSubmit  " onclick="addBook()" >  Submit</button>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class=" table-info w-100  ">
+                <table class="  text center bg-light w-100">
+                    <thead class="text-center border-bottom py-2">
+                        <th class="py-2">Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody class="text-center " id="table">
+                     
+                 
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <div  id="boxMassage" class=" box-massage w-100 h-100 d-flex justify-content-center align-items-center d-none">
+        <div class="box-info">
+            <header class=" d-flex justify-content-between">
+                <div class=" d-flex mt-3 ms-3">
+                    <span class="dot-box bg-danger"></span>
+                    <span class="dot-box bg-warning"></span>
+                    <span class="dot-box bg-success"></span>
+                </div>
+                <button onclick="closeBox()" class="close-btn btn border-0 mt-3 me-2"><i
+                    class="fs-3 fw-bold fa-solid fa-xmark"></i></button>
+            </header>
+            <div class="box-contant">
+                <p class="prag">Site Name or Url is not valid, Please follow the rules below :</p>
+                <ol class="">
+                    <li>
+                        <i class="fa-regular fa-circle-right p-2 text-danger"></i>
+                        <p>Site name must contain at least 3 characters</p>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-circle-right p-2 text-danger"></i>
+                        <p>Site URL must be a valid one</p>
+
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

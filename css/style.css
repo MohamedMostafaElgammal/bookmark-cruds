@@ -1,0 +1,124 @@
+body{
+   background-color:#f8ecde  ; 
+   cursor: pointer;
+}
+
+.box-massage{
+    position: absolute;
+    top: 0;
+   right: 0%;
+
+   background-color: #0000006d;
+    
+   width: 100%;
+   height: 100%;
+   z-index: 999;
+}
+ .form-control:focus {
+        border-color: #d99c39;
+        box-shadow: 0 0 0 0.25rem #fec26055;
+    
+}
+.box-info{
+    width: 500px;
+    height: 280px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.box-massage .dot-box{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    margin-left: 4px;
+}
+.box-contant li{
+    list-style: none;
+    display: flex;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+}
+.box-contant .prag{
+    font-family: "Righteous", serif;
+
+    font-size:19px ;
+    font-weight: 400;
+    padding: 15px;
+}
+
+
+  .container h1{
+    position: relative;
+    z-index: 5;
+    font-family: "Pacifico", cursive;
+    font-size:55px ;
+    font-weight:500 ;
+    color: rgb(53, 45, 40);
+}
+.container h1::after{
+content: '';
+width: 22%;
+height: 40%;
+background-color: rgb(254, 194, 96); 
+position: absolute;
+bottom: 0;
+left: 39%;
+z-index: -1;
+transition: all 1s ;
+}
+.container h1:hover::after{
+    height: 80%;
+}
+
+h2{
+ font-family: "Righteous", serif;
+ font-size:25px ;
+ font-weight:500 ;
+
+
+}
+.divh{
+    background-image: linear-gradient(to right, #3ca55c, #fdaf32);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contant{
+    border-top: 2px #000 dotted;
+    border-bottom: 2px #000 dotted;
+    
+}
+.btnSubmit{
+    background-color: rgb(209, 81, 44);
+    color: white;
+    padding: 10px 60px ;
+    border: none;
+    border-radius: 5px;
+}
+#table tr{
+    border-top: #1b1919b2 1px solid;
+}
+table .btn-visit{
+    background-color: rgb(158, 177, 59);
+    text-decoration: none;
+    color: #fff;
+    padding: 6px 12px 6px 8px;
+    border: none;
+    border-radius: 5px;
+    transition: all .5;
+}
+table .btn-visit:hover{
+    background-color:  rgb(138, 153, 61);
+    color: #fff;
+}
+table .btn-delete{
+    background-color: rgb(235, 28, 54);
+    color: #fff;
+     padding: 6px 12px 6px 8px;
+    border: none;
+    border-radius: 5px;
+    transition: all .5;
+}
+table .btn-delete:hover{
+    background-color:  rgb(198, 31, 53);
+    color: #fff;
+}
